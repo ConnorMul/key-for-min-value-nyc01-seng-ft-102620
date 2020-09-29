@@ -4,8 +4,8 @@
 def key_for_min_value(name_hash)
   smallest_value = 1000
   name_hash.each do |name, num|
-    if smallest_value > num.to_i
-      smallest_value = :name
+    if smallest_value > num
+      smallest_value = num
     end 
   end 
   smallest_value
